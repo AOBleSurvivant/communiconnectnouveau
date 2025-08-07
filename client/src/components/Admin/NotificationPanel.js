@@ -8,6 +8,7 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
+  ListItemSecondaryAction,
   Typography,
   Button,
   Chip,
@@ -22,7 +23,7 @@ import {
   Warning,
   Error,
   Info,
-  Delete,
+  Delete as DeleteIcon,
   Done,
   DoneAll,
   Refresh,
@@ -159,7 +160,7 @@ const NotificationPanel = () => {
             <Button size="small" startIcon={<DoneAll />} onClick={handleMarkAllAsRead} disabled={unreadCount === 0}>
               Tout marquer comme lu
             </Button>
-            <Button size="small" color="error" startIcon={<Delete />} onClick={handleClearAll} disabled={notifications.length === 0}>
+            <Button size="small" color="error" startIcon={<DeleteIcon />} onClick={handleClearAll} disabled={notifications.length === 0}>
               Tout supprimer
             </Button>
           </Box>

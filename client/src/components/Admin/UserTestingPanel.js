@@ -318,7 +318,7 @@ const UserTestingPanel = () => {
 
           <Stepper activeStep={activeStep} orientation="vertical">
             {currentScenario.tasks.map((task, index) => (
-              <Step key={`scenario-${scenario.title}-${index}`}>
+              <Step key={`scenario-${currentScenario.title}-${index}`}>
                 <StepLabel>
                   <Typography variant="subtitle1">
                     Tâche {index + 1} : {task}
