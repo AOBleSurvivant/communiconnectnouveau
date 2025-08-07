@@ -1,0 +1,121 @@
+{
+  "timestamp": "2025-08-06T11:02:05.115Z",
+  "backend": {
+    "health": {
+      "status": "OK",
+      "response": {
+        "status": "OK",
+        "message": "CommuniConnect API fonctionne correctement",
+        "timestamp": "2025-08-06T11:02:05.212Z"
+      },
+      "statusCode": 200
+    },
+    "config": {
+      "port": 5000,
+      "environment": "development",
+      "cors": "configuré",
+      "security": "middlewares actifs"
+    }
+  },
+  "frontend": {
+    "homepage": {
+      "status": "OK",
+      "title": "CommuniConnect - Guinée",
+      "url": "http://localhost:3000"
+    },
+    "login": {
+      "status": "OK",
+      "title": "CommuniConnect - Guinée",
+      "formPresent": true
+    },
+    "register": {
+      "status": "OK",
+      "title": "CommuniConnect - Guinée",
+      "formPresent": true
+    }
+  },
+  "database": {
+    "connection": {
+      "status": "OK",
+      "message": "MongoDB connecté via API"
+    }
+  },
+  "api": {
+    "Health": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/health"
+    },
+    "Auth Status": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/auth/status"
+    },
+    "Auth Register": {
+      "status": "ERROR",
+      "error": "Request failed with status code 500",
+      "statusCode": 500,
+      "method": "POST",
+      "path": "/api/auth/register"
+    },
+    "Auth Login": {
+      "status": "ERROR",
+      "error": "Request failed with status code 400",
+      "statusCode": 400,
+      "method": "POST",
+      "path": "/api/auth/login"
+    },
+    "Friends": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/friends"
+    },
+    "Livestreams": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/livestreams"
+    },
+    "Messages": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/messages"
+    },
+    "Conversations": {
+      "status": "OK",
+      "statusCode": 200,
+      "method": "GET",
+      "path": "/api/conversations"
+    }
+  },
+  "features": {
+    "navigation": {
+      "status": "WARNING",
+      "linkCount": 0
+    },
+    "forms": {
+      "status": "WARNING",
+      "formCount": 0
+    },
+    "buttons": {
+      "status": "OK",
+      "buttonCount": 28
+    },
+    "images": {
+      "status": "OK",
+      "imageCount": 3
+    }
+  },
+  "errors": [],
+  "summary": {
+    "backend": "OPÉRATIONNEL",
+    "frontend": "OPÉRATIONNEL",
+    "database": "CONNECTÉ",
+    "apis": "6/8 fonctionnelles",
+    "timestamp": "2025-08-06T11:02:51.485Z"
+  }
+}
